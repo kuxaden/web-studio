@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cтворення сайтів</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jura:wght@400;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.min.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <div class="container-fluid">
+        <nav class="navbar">
+          <div class="navbar__title">
+            <h1>Послуги з верстання сайтів. Створення сайтів. Хмельницька обл.</h1>
+          </div>
+          <a class="navbar__logo" href="#">
+            <img class="navbar__logo-img" src="img/svg/logo.svg" alt="logotip">
+          </a>
+          <div class="navbar__tel ">
+            <a class="navbar__tel-link gradient-button" href="tel:+380937093029">+380937093029</a>
+          </div>
+          <ul class="menu-list">
+            <li class="menu-list__item " onclick="closeMenu()">
+              <a class="menu-list__item-link gradient-button" href="#services">Послуги</a>
+            </li>
+            <li class="menu-list__item " onclick="closeMenu()">
+              <a class="menu-list__item-link gradient-button" href="#portfolio">Портфоліо</a>
+            </li>
+            <li class="menu-list__item " onclick="closeMenu()">
+              <a class="menu-list__item-link gradient-button" href="#contacts">Контакти</a>
+            </li>
+
+          </ul>
+          <button class="navbar-btn gradient-button" onclick="openMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </nav>
+      </div>
+    </header>
+    <main class="main">
+      <section class="stage">
+        <div class="container-fluid">
+          <div class="stage">
+            <h2 class="stage__title">покрокова схема роботи</h2>
+            <ul class="stage__list">
+              <li class="stage__item stage__item0 stage__item--active">
+                <a class="stage__link" href="#">
+                  <div class="stage__item__point"></div>
+                </a>
+                <div class="stage__item__content">
+                  Збір інформації</div>
+                <div class="stage__item__percent">0%</div>
+              </li>
+              <li class="stage__item stage__item1">
+                <a class="stage__link" href="#">
+                  <div class="stage__item__point"></div>
+                </a>
+                <div class="stage__item__content">
+                  Планування </div>
+                <div class="stage__item__percent"> 17%</div>
+              </li>
+              <li class="stage__item stage__item2">
+                <a class="stage__link" href="#">
+                  <div class="stage__item__point"></div>
+                </a>
+                <div class="stage__item__content">
+                  Дизайн </div>
+                <div class="stage__item__percent">34%</div>
+              </li>
+              <li class="stage__item stage__item3">
+                <a class="stage__link" href="#">
+                  <div class="stage__item__point"></div>
+                </a>
+                <div class="stage__item__content">
+                  Верстка </div>
+                <div class="stage__item__percent"> 50%</div>
+              </li>
+              <li class="stage__item stage__item4">
+                <a class="stage__link" href="#">
+                  <div class="stage__item__point"></div>
+                </a>
+                <div class="stage__item__content">
+                  Оптимізація </div>
+                <div class="stage__item__percent"> 67%</div>
+              </li>
+              <li class="stage__item stage__item5">
+                <a class="stage__link" href="#">
+                  <div class="stage__item__point"></div>
+                </a>
+                <div class="stage__item__content">
+                  Тестування </div>
+                <div class="stage__item__percent">84%</div>
+              </li>
+              <li class="stage__item stage__item6">
+                <a class="stage__link" href="#">
+                  <div class="stage__item__point"></div>
+                </a>
+                <div class="stage__item__content">
+                  Результат </div>
+                <div class="stage__item__percent">100%</div>
+              </li>
+            </ul>
+            <div class="slider">
+              <div class="slider__item">
+                <p class="slider__item-num">1</p>
+                <h3 class="slider__item-title">Збір інформації</h3>
+                <p class="slider__item-text"> Спочатку потрібно визначити для чого він потрібен. Від цього залежатиме
+                  тип ресурсу, портрет цільової аудиторії та основні вимоги. Чітке розуміння мети та остаточного
+                  результату допоможе вибудувати ланцюг структури проекту та сформувати які етапи створення сайту
+                  необхідні для досягнення мети. Така своєрідна анкета веб-розробки дозволить визначити якнайкращу
+                  стратегію подальшого розвитку проекту.</p>
+              </div>
+              <div class="slider__item">
+                <p class="slider__item-num">2</p>
+                <h3 class="slider__item-title">Планування</h3>
+                <p class="slider__item-text">На основі інформації, зібраної на попередній стадії, створюється мапа
+                  сайту, яка описує взаємозв'язок між різними частинами вашого сайту. Це допомагає зрозуміти, наскільки
+                  зручним у використанні він буде. Основна мета створення карти сайту – створити легкий з погляду
+                  навігації та дружній до користувача продукт. Це дозволяє зрозуміти внутрішню структуру майбутнього
+                  сайту, але не описує, як сайт виглядатиме.</p>
+              </div>
+              <div class="slider__item">
+                <p class="slider__item-num">3</p>
+                <h3 class="slider__item-title">Дизайн</h3>
+                <p class="slider__item-text">Весь візуальний контент, такий як зображення, фото та відео, створюється
+                  саме зараз. Інтереси замовника, а також цільова аудиторія повинні враховуватися передусім під час
+                  роботи над дизайном. Дизайнером на цьому етапі створюється шаблон сторінки. Основне призначення
+                  шаблону – візуалізувати структуру сторінки, її вміст, а також відобразити основний функціонал. Шаблон
+                  містить кольори, логотипи та зображення.</p>
+              </div>
+              <div class="slider__item">
+                <p class="slider__item-num">4</p>
+                <h3 class="slider__item-title">Верстка</h3>
+                <p class="slider__item-text">Даний процес передбачає злиття дизайну з двигуном, що перетворює сайт в
+                  інструмент з робочими функціями. Написання відповідного функціоналу без використання CMS або ж
+                  "натяжка" верстки на CMS. Перший варіант використовується для сайтів які не будуть часто змінювати
+                  свій контент, такі сайти набагато швидші що впливає на пошукову видачу. Використання CMS - це зручне
+                  управління контентом за допомогою адмін панелі.</p>
+              </div>
+              <div class="slider__item">
+                <p class="slider__item-num">5</p>
+                <h3 class="slider__item-title">Оптимізація</h3>
+                <p class="slider__item-text"> Після верстки та програмування майже кожен файл оптимізується, видаляється
+                  все лишнє аж до пробілів та переносів. Окремо обрізаються усі растрові зображення до необхідних
+                  розмірів та максимально стискаються. Це зменшує розмір файлів і дозволяє завантажувати їх швидше.</p>
+              </div>
+              <div class="slider__item">
+                <p class="slider__item-num">6</p>
+                <h3 class="slider__item-title">Тестування та запуск</h3>
+                <p class="slider__item-text">На даному етапі перевіряється кожне посилання, форма та скрипт. Валідатори
+                  коду використовуються для того, щоб бути впевненим, що створений на попередньому етапі код повністю
+                  відповідає сучасним веб-стандартам. Після всіх перевірок сайт може бути завантажений на сервер. Після
+                  завантаження сайту на сервер, проводиться ще один тест для того, щоб бути впевненим, що під час
+                  завантаження не сталося непередбачених помилок і всі файли цілі та неушкоджені.</p>
+              </div>
+              <div class="slider__item">
+                <p class="slider__item-num">7</p>
+                <h3 class="slider__item-title">Результат</h3>
+                <p class="slider__item-text">Ви отримаєте швидкий та ефективний веб інструмент для розвитку вашого
+                  бізнесу. Подальша технічна підтримка надається безкоштовно</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="services" id="services">
+        <div class="container-fluid">
+          <h2 class="services__title">Послуги</h2>
+          <ul class="services__list">
+            <li class="services__item">
+              <h3 class="services__item-title">Landing page</h3>
+              <div class="services__item-img">
+                <img src="img/svg/landing.svg" alt="landing">
+              </div>
+              <div class="services__item-text">
+                Лендінг — це невеликий односторінковий сайт, який закликає клієнта зробити одну конкретну дію:
+                наприклад, підписатися на розсилку, купити навчальний курс або замовити соковижимач. <br>
+              </div>
+              <div class="services__item-box">
+                <span class="services__item-price">від 300$</span>
+                <button class="services__item-detail">
+                  <span>Детальніше</span>
+                </button>
+              </div>
+            </li>
+            <li class="services__item">
+              <h3 class="services__item-title">Сайт візитка</h3>
+              <div class="services__item-img">
+                <img src="img/svg/vizitka.svg" alt="landing">
+              </div>
+              <div class="services__item-text">
+                Не великий сайт інформативного характеру, несе основну інформацію про компанію, послуги та товари, а
+                також контактні дані та форму зворотнього звязку. Кількість сторінок не обмежена.
+              </div>
+              <div class="services__item-box">
+                <span class="services__item-price">від 100$</span>
+                <button class="services__item-detail">
+                  <span>Детальніше</span>
+                </button>
+              </div>
+            </li>
+            <li class="services__item">
+              <h3 class="services__item-title">Корпоративний сайт</h3>
+              <div class="services__item-img">
+                <img src="img/svg/corporate.svg" alt="landing">
+              </div>
+              <div class="services__item-text">
+                Високоефективний інструмент розвитку бізнесу в інтернеті. Конкурентносроможній сайт з широкою
+                функціональною частиною та сучасним дизайном відповідним іміджу вашою компанії.
+              </div>
+              <div class="services__item-box">
+                <span class="services__item-price">від 350$</span>
+                <button class="services__item-detail">
+                  <span>Детальніше</span>
+                </button>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="portfolio" id="portfolio">
+        <div class="container-fluid">
+          <h2 class="portfolio__title">
+            Портфоліо
+          </h2>
+          <div class="portfolio__inner">
+            <button class="portfolio__button" onClick = 'changeImage()' >
+              Наступний сайт
+            </button>
+            <div class=" portfolio__monitor portfolio__item">
+              <img class="portfolio__samsung " src="img/content/monitor.webp" alt="" >
+              <div class="portfolio__monitor-img">
+                <img name="imgmon" src="img/content/mon01.webp" alt="img">
+              </div>
+            </div>
+            <div class="portfolio__tablet portfolio__item">
+              <img class="portfolio__ipad " src="img/content/ipad.webp" alt="" >
+              <div class="portfolio__tablet-img">
+                <img name="imgtab" src="img/content/tab01.webp" alt="img">
+              </div>
+            </div>
+            <div class="portfolio__mobile portfolio__item">
+              <img class="portfolio__iphone " src="img/content/iphone.webp" alt="">
+              <div class="portfolio__mobile-img">
+                <img name="imgmob" src="img/content/mob01.webp" alt="img">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="contacts" id="contacts">
+        <div class="container-fluid">
+          <h2 class="contacts-block__title">
+            Контакти
+          </h2>
+          <div class="contacts-block">
+            <div class="contacts-block__address">
+              м. Городок<br>
+              Хмельницька обл.<br>
+            </div>
+            <div class="contacts-block__onmap">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20870.31659092366!2d26.562471009217678!3d49.16660222951714!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47322105d261d705%3A0x912eb1c3a939f316!2z0JPQvtGA0L7QtNC-0LosINCl0LzQtdC70YzQvdC40YbRjNC60LAg0L7QsdC70LDRgdGC0YwsIDMyMDAw!5e0!3m2!1suk!2sua!4v1678185793063!5m2!1suk!2sua"
+                style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+              </iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__inner">
+        <a class="footer__logo" href="#">
+          <img src="img/svg/logo.svg" alt="logotip">
+        </a>
+        <a href="http://jigsaw.w3.org/css-validator/check/referer">
+          <img style="border:0;width:88px;height:31px" src="//jigsaw.w3.org/css-validator/images/vcss"
+            alt="Правильный CSS!" />
+        </a>
+        <div class="footer-contacts">
+          <ul class="footer-contacts__list">
+            <li class="footer-contacts__list-item gradient-button">
+              <a class="" href="mailto:kuxa.cominer@gmail.com"><i class="icon-gmail"></i>kuxa.cominer@gmail.com</a>
+            </li>
+            <li class="footer-contacts__list-item gradient-button">
+              <a class="" href="tel:+380937093029">Life +38(093)709-30-29</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-social">
+          <ul class="footer-social__list">
+            <li class="footer-social__list-item gradient-button">
+              <a class="" href="viber://add?number=380937093029"><i class="fa-brands fa-viber"></i></a>
+            </li>
+            <li class="footer-social__list-item gradient-button"><a class="" href="https://telegram.me/+380937093029"><i
+                  class="fa-brands fa-telegram"></i></a>
+            </li>
+            <li class="footer-social__list-item gradient-button">
+              <a class="" href="https://www.instagram.com/kuxaden/"><i class="fa-brands fa-instagram"></i></a>
+            </li>
+            <li class="footer-social__list-item gradient-button">
+              <a class="" href="https://www.facebook.com/profile.php?id=100022210161788"><i
+                  class="fa-brands fa-facebook"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="https://kit.fontawesome.com/38a4fe2210.js" crossorigin="anonymous"></script>
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>

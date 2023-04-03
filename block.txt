@@ -1,0 +1,25 @@
+      <section class="verstka">
+        <div class="container">
+          <div class="verstka__inner">
+            <h2 class="verstka__title">Послуги з верстки сайту</h2>
+            <ul class="verstka__species">
+              <li class="verstka__item">
+                <h3 class="verstka__item-title">Адаптивна верстка</h3>
+                <p class="verstka__item-text">Має на увазі коректне відображення на будь-яких видах пристроїв. На сьогоднішній день вона найпопулярніша, навряд чи знайдеться людина, яка захоче, щоб його сайт добре відображався лише на комп'ютерах або лише на смартфонах.</p>
+                <img class="verstka__item-img" src="" alt="" >
+              </li>
+              <li class="verstka__item">
+                <h3 class="verstka__item-title">Таблична верстка</h3>
+                <p class="verstka__item-text">Таблична версія дизайну сайту передбачає використання таблиць, наповнених інформацією. Зовні процес нагадує роботу в Excel. Цей метод вважається вже застарілим, але активно використовується. </p>
+                <img class="verstka__item-img" src="" alt="" >
+              </li>
+              <li class="verstka__item">
+                <h3 class="verstka__item-title">Блокова верстка</h3>
+                <p class="verstka__item-text">Це сучасний універсальний вид верстки сайтів, що активно використовується для створення якісних веб-сторінок. Принцип його полягає в тому, що всі елементи розміщуються в блоках або контейнерах. Вони містять необхідну інформацію і є регульованими. Можна встановити їх розмір, колір та інші параметри.</p>
+                <img class="verstka__item-img" src="" alt="" >
+              </li>
+  
+            </ul>
+          </div>
+        </div>
+      </section>
