@@ -433,7 +433,7 @@
       padding-left: 0px;
 
       &::before {
-         left: 154px;
+         left: 158px;
       }
    }
 }
@@ -492,7 +492,11 @@
       @extend %button-arrow;
       width: 220px;
       margin: 30px auto;
+      &::before {
+         background-image: url(../img/svg/arrow_right.svg);
+      }
    }
+
 
    &__button:hover {
       padding-left: 0px;

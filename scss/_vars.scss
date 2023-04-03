@@ -46,6 +46,7 @@ $shadow: #2E8B57;
 }
 
 %button-arrow {
+  display: block;
   margin: 15px;
   background: $color2;
   padding: 10px 30px;
@@ -71,7 +72,7 @@ $shadow: #2E8B57;
     top: 3px;
     transition: .5s;
     background-color: $color3;
-    background-image: url(../img/svg/arrow_right.svg);
+    background-image: url(../img/svg/call.svg);
     background-size: 60%;
     background-repeat: no-repeat;
     background-position: center;

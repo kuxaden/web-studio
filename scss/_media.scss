@@ -328,15 +328,13 @@
          @extend %button-arrow;
          margin: 10px;
          min-width: unset;
-         height: 48px;
          width: 160px;
-         border-radius: 24px;
          z-index: 5;
       }
 
       &__item-detail:hover {
          &::before {
-            left: 114px;
+            left: 118px;
          }
       }
    }
