@@ -6,13 +6,18 @@ $shadow: #2E8B57;
 
 .portfolio__monitor {
   --he: 300px;
-};
+}
+
+;
+
 .portfolio__tablet {
   --he: 318px;
 }
+
 .portfolio__mobile {
   --he: 570px;
 }
+
 %section-title {
   color: $color2;
   display: flex;
@@ -94,4 +99,24 @@ $shadow: #2E8B57;
 
 .gradient-button:hover {
   background-position: right center;
+}
+
+// BUTTON PLAY
+%play {
+  transition: all 0.5s;
+  opacity: 1;
+  content: '';
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/svg/play.svg);
+  background-size: 120px;
+  background-color:rgba($color3, 0.4);
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 7;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }

@@ -469,28 +469,12 @@
    &__item {
       position: relative;
       overflow: hidden;
+
    }
 
    &__item:hover {
+
       z-index: 10;
-   }
-
-   &__item--scroll.portfolio__monitor {
-      .portfolio__monitor-img img {
-         animation: scroll 20s ease-in-out forwards;
-      }
-   }
-
-   &__item--scroll.portfolio__tablet {
-      .portfolio__tablet-img img {
-         animation: scroll 20s ease-in-out forwards;
-      }
-   }
-
-   &__item--scroll.portfolio__mobile {
-      .portfolio__mobile-img img {
-         animation: scroll 20s ease-in-out forwards;
-      }
    }
 
    &__button {
@@ -525,6 +509,13 @@
       z-index: 2;
       aspect-ratio: 4 / 3;
    }
+   .portfolio__monitor:hover {
+      .portfolio__monitor-img {
+         &::after {
+            background-color: transparent;
+         }
+      }
+   }
 
    &__samsung {
       position: absolute;
@@ -540,6 +531,9 @@
       overflow: hidden;
       aspect-ratio: 367 / 200;
 
+      &::after {
+         @extend %play;
+      }
    }
 
    //IPAD
@@ -551,6 +545,13 @@
       max-height: 358px;
       aspect-ratio: 270 / 179;
       margin: auto 0px 0px 0px;
+   }
+   .portfolio__tablet:hover {
+      .portfolio__tablet-img {
+         &::after {
+            background-color: transparent;
+         }
+      }
    }
 
    &__ipad {
@@ -564,10 +565,14 @@
       position: absolute;
       width: 100%;
       overflow: hidden;
-      aspect-ratio: 426 / 318;
+      aspect-ratio: 426 / 280;
       z-index: 5;
 
-
+      &::after {
+         @extend %play;
+         width: 85%;
+         height: 93%;
+      }
    }
 
    // IPHONE
@@ -579,6 +584,13 @@
       height: 600px;
       aspect-ratio: 2 / 1;
 
+   }
+   .portfolio__mobile:hover {
+      .portfolio__mobile-img {
+         &::after {
+            background-color: transparent;
+         }
+      }
    }
 
    &__iphone {
@@ -596,36 +608,15 @@
       z-index: 3;
       border-radius: 35px;
 
-      &::before {
-         position: absolute;
-         left: 0;
-         top: 0;
-         content: '';
-         width: 0;
-         height: 0;
-         border: 0 solid transparent;
-         border-left-width: 0px;
-         border-right-width: 50px;
-         border-top: 40px solid $color2;
-         z-index: 4;
-      }
-
       &::after {
-         position: absolute;
-         right: 0;
-         top: 0;
-         content: '';
-         width: 0;
-         height: 0;
-         border: 0 solid transparent;
-         border-left-width: 50px;
-         border-right-width: 0px;
-         border-top: 40px solid $color2;
+         @extend %play;
+         padding: 4% 4%;
       }
    }
 
    &__mobile-img img {
       border-radius: 35px;
+
 
    }
 
@@ -642,7 +633,44 @@
          transform: translateY(0);
       }
    }
+
+   &__item--scroll.portfolio__monitor {
+      .portfolio__monitor-img {
+         &::after {
+            opacity: 0;
+         }
+      }
+
+      .portfolio__monitor-img img {
+         animation: scroll 20s ease-in-out forwards;
+      }
+   }
+
+   &__item--scroll.portfolio__tablet {
+      .portfolio__tablet-img {
+         &::after {
+            opacity: 0;
+         }
+      }
+
+      .portfolio__tablet-img img {
+         animation: scroll 20s ease-in-out forwards;
+      }
+   }
+
+   &__item--scroll.portfolio__mobile {
+      .portfolio__mobile-img {
+         &::after {
+            opacity: 0;
+         }
+      }
+
+      .portfolio__mobile-img img {
+         animation: scroll 20s ease-in-out forwards;
+      }
+   }
 }
+
 
 
 
