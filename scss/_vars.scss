@@ -54,7 +54,7 @@ $shadow: #2E8B57;
   transition: .5s;
   cursor: pointer;
   display: inline-block;
-  z-index: 10;
+  z-index: 5;
 
   &::before {
     content: '';

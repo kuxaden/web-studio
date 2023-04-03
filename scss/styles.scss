@@ -4,6 +4,7 @@
 @import 'libs';
 @import 'global';
 
+// HEADER
 .header {
    position: fixed;
    z-index: 15;
@@ -58,9 +59,20 @@
    }
 
    &-btn {
+      display: none;
+      height: 50px;
+      padding: 5px;
+      cursor: pointer;
+      background-color: transparent;
       grid-area: 2 / 4 / 3 / 5;
    }
 
+   &-btn span {
+      display: block;
+      width: 30px;
+      height: 4px;
+      margin: 4px;
+   }
 }
 
 .menu-list {
@@ -81,25 +93,8 @@
    }
 }
 
-.navbar-btn {
-   display: none;
-   height: 50px;
-   padding: 5px;
-   cursor: pointer;
-   background-color: transparent;
-}
-
-.navbar-btn span {
-   display: block;
-   width: 30px;
-   height: 4px;
-   margin: 4px;
-}
-
-// HEADER_END
 
 //STAGE 
-
 .stage {
    margin: 110px auto 50px;
 
@@ -287,51 +282,52 @@
    }
 }
 
-.slick-list {
-   overflow: hidden;
-   border-radius: 10px;
-}
+.slick {
+   &-list {
+      overflow: hidden;
+      border-radius: 10px;
+   }
 
-.slick-track {
-   display: flex;
-}
+   &-track {
+      display: flex;
+   }
 
-.slick-arrow {
-   position: absolute;
-   top: 50%;
-   transform: translateY(-50%);
-   z-index: 10;
-   font-size: 0;
-   transition: all 0.3s;
+   &-arrow {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 10;
+      font-size: 0;
+      transition: all 0.3s;
 
-}
+   }
 
-.slick-arrow.slick-prev {
-   left: 0;
-   background: url(../img/svg/left-arrow.svg) 0 0 / 100% no-repeat;
-   width: 40px;
-   height: 40px;
-   border: hidden;
-}
+   &-arrow.slick-prev {
+      left: 0;
+      background: url(../img/svg/left-arrow.svg) 0 0 / 100% no-repeat;
+      width: 40px;
+      height: 40px;
+      border: hidden;
+   }
 
-.slick-arrow.slick-prev:hover {
-   left: -5px;
-}
+   &-arrow.slick-prev:hover {
+      left: -5px;
+   }
 
-.slick-arrow.slick-next {
-   background: url(../img/svg/right-arrow.svg) 0 0 / 100% no-repeat;
-   right: 0;
-   width: 40px;
-   height: 40px;
-   border: hidden;
-}
+   &-arrow.slick-next {
+      background: url(../img/svg/right-arrow.svg) 0 0 / 100% no-repeat;
+      right: 0;
+      width: 40px;
+      height: 40px;
+      border: hidden;
+   }
 
-.slick-arrow.slick-next:hover {
-   right: -5px;
+   &-arrow.slick-next:hover {
+      right: -5px;
+   }
 }
 
 // Послуги
-
 .services {
    &:hover {
       .services__title {
@@ -427,7 +423,7 @@
 
    &__item-detail {
       @extend %button-arrow;
-      
+
    }
 
    &__item-detail:hover {
@@ -439,15 +435,8 @@
    }
 }
 
-
 // PORTFOLIO
-
-
 .portfolio {
-   &__item {
-      position: relative;
-      overflow: hidden;
-   }
    &:hover {
       .portfolio__title {
          &::after {
@@ -455,43 +444,53 @@
          }
       }
    }
-
+   
    &__title {
       @extend %section-title;
       margin-bottom: 50px;
    }
-
+   
    &__inner {
       background: $color2;
       display: grid;
       grid-template-columns: repeat(7, 1fr);
       gap: 0;
+      padding: 15px;
    }
-
+   &__item {
+      position: relative;
+      overflow: hidden;
+   }
+   
    &__item:hover {
       z-index: 10;
    }
+
    &__item--scroll.portfolio__monitor {
       .portfolio__monitor-img img {
          animation: scroll 20s ease-in-out forwards;
       }
    }
+
    &__item--scroll.portfolio__tablet {
       .portfolio__tablet-img img {
          animation: scroll 20s ease-in-out forwards;
       }
    }
+
    &__item--scroll.portfolio__mobile {
       .portfolio__mobile-img img {
          animation: scroll 20s ease-in-out forwards;
       }
    }
+
    &__button {
       grid-area: 2 / 4 / 3 / 6;
       @extend %button-arrow;
       width: 220px;
       margin: 30px;
    }
+
    &__button:hover {
       padding-left: 0px;
 
@@ -504,9 +503,10 @@
    &__monitor {
       grid-area: 1 / 1 / 2 / 8;
       align-items: start;
-      margin: 20px 20px auto 20px;
+      margin: 0px 0px auto 0px;
       max-width: 600px;
-      min-width: 320px;
+      width: 600px;
+      min-width: 270px;
       max-height: 450px;
       z-index: 2;
       aspect-ratio: 4 / 3;
@@ -514,7 +514,9 @@
 
    &__samsung {
       position: absolute;
+      overflow: hidden;
       z-index: 2;
+
    }
 
    &__monitor-img {
@@ -523,17 +525,18 @@
       width: 100%;
       overflow: hidden;
       aspect-ratio: 367 / 200;
-      
+
    }
 
    //IPAD
    &__tablet {
-      grid-area: 1 / 3 / 2 / 7;
+      grid-area: 1 / 4 / 2 / 7;
       max-width: 540px;
-      min-width: 320px;
+      min-width: 270px;
+      width: 540px;
       max-height: 358px;
       aspect-ratio: 270 / 179;
-      margin: auto 20px 20px 20px;
+      margin: auto 0px 0px 0px;
    }
 
    &__ipad {
@@ -556,16 +559,16 @@
    // IPHONE
    &__mobile {
       grid-area: 1 / 6 / 2 / 8;
+      margin: 0 0 0 auto;
       width: 300px;
+      max-width: 270px;
       height: 600px;
       aspect-ratio: 2 / 1;
-      margin: 20px; 
 
    }
 
    &__iphone {
       position: absolute;
-      margin: auto;
       overflow: hidden;
       z-index: 4;
    }
@@ -578,6 +581,7 @@
       aspect-ratio: 270 / 528;
       z-index: 3;
       border-radius: 35px;
+
       &::before {
          position: absolute;
          left: 0;
@@ -591,6 +595,7 @@
          border-top: 40px solid $color2;
          z-index: 4;
       }
+
       &::after {
          position: absolute;
          right: 0;
@@ -604,25 +609,27 @@
          border-top: 40px solid $color2;
       }
    }
+
    &__mobile-img img {
       border-radius: 35px;
 
    }
+   @keyframes scroll {
+      0% {
+         transform: translateY(0);
+      }
+   
+      50% {
+         transform: translateY(calc(-100% + var(--he)));
+      }
+   
+      100% {
+         transform: translateY(0);
+      }
+   }
 }
 
-@keyframes scroll {
-   0% {
-      transform: translateY(0);
-   }
 
-   50% {
-      transform: translateY(calc(-100% + var(--he)));
-   }
-
-   100% {
-      transform: translateY(0);
-   }
-}
 
 // CONTACTS
 .contacts {
@@ -682,42 +689,43 @@
       padding: 0 15px;
       color: $color2;
    }
-}
-
-.footer-contacts {
-   font-family: 'Jura';
-
-   &__list-item {
-      margin: 10px 20px;
-      font-size: 16px;
-      line-height: 24px;
-   }
-
-   &__list-item a {
-      color: inherit;
-   }
-}
-
-.footer-social {
-   &__list {
-      display: flex;
-      flex-wrap: nowrap;
-      justify-content: end;
-   }
-
-   &__list-item {
-      font-size: 32px;
-      line-height: 32px;
-      margin: 15px;
-      border-radius: 10px;
-      padding: 6px 8px;
-
-   }
-
-   &__list-item a {
-      color: inherit;
+   &-contacts {
+      font-family: 'Jura';
+   
+      &__list-item {
+         margin: 10px 20px;
+         font-size: 16px;
+         line-height: 24px;
+      }
+   
+      &__list-item a {
+         color: inherit;
+      }
    }
    
+   &-social {
+      &__list {
+         display: flex;
+         flex-wrap: nowrap;
+         justify-content: end;
+      }
+   
+      &__list-item {
+         font-size: 32px;
+         line-height: 32px;
+         margin: 15px;
+         border-radius: 10px;
+         padding: 6px 8px;
+   
+      }
+   
+      &__list-item a {
+         color: inherit;
+      }
+   
+   }
 }
+
+
 
 @import 'media';
