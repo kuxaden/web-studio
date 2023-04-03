@@ -485,10 +485,10 @@
    }
 
    &__button {
-      grid-area: 2 / 4 / 3 / 6;
+      grid-area: 2 / 1 / 3 / 8;
       @extend %button-arrow;
       width: 220px;
-      margin: 30px;
+      margin: 30px auto;
    }
 
    &__button:hover {
