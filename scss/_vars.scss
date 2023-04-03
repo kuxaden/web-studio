@@ -17,11 +17,15 @@ $shadow: #2E8B57;
   color: $color2;
   display: flex;
   justify-content: center;
+  font-family: 'Alumni Sans Pinstripe', sans-serif;
+  font-size: 30px;
+  letter-spacing: 3px;
+  line-height: 30px;
   align-items: center;
   text-transform: uppercase;
   width: 100%;
   padding: 10px;
-  margin: 30px 0 20px 0;
+  margin: 40px auto;
   position: relative;
   border-top: 2px solid $color2;
 

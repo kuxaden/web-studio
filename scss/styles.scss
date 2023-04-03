@@ -96,12 +96,13 @@
 
 //STAGE 
 .stage {
-   margin: 110px auto 50px;
+   margin: 110px auto 0;
 
    &:hover {
       .stage__title {
          &::after {
-            width: 250px;
+            max-width: 400px;
+            width: 100%;
          }
       }
    }
@@ -265,11 +266,12 @@
    }
 
    &__item-title {
+      font-family: 'Seymour One', sans-serif;
       padding: 10px 10px 0 0;
       grid-area: 1 / 2 / 2 / 3;
       text-align: center;
       text-transform: uppercase;
-      font-size: 24px;
+      font-size: 20px;
       line-height: 32px;
       text-align: center;
    }
@@ -394,6 +396,7 @@
 
    &__item-title {
       padding: 10px;
+      font-family: 'Seymour One', sans-serif;
       color: $color1;
       text-align: center;
       grid-area: 1 / 2 / 2 / 3;
@@ -444,12 +447,11 @@
          }
       }
    }
-   
+
    &__title {
       @extend %section-title;
-      margin-bottom: 50px;
    }
-   
+
    &__inner {
       background: $color2;
       display: grid;
@@ -457,11 +459,12 @@
       gap: 0;
       padding: 15px;
    }
+
    &__item {
       position: relative;
       overflow: hidden;
    }
-   
+
    &__item:hover {
       z-index: 10;
    }
@@ -614,15 +617,16 @@
       border-radius: 35px;
 
    }
+
    @keyframes scroll {
       0% {
          transform: translateY(0);
       }
-   
+
       50% {
          transform: translateY(calc(-100% + var(--he)));
       }
-   
+
       100% {
          transform: translateY(0);
       }
@@ -690,40 +694,41 @@
       padding: 0 15px;
       color: $color2;
    }
+
    &-contacts {
       font-family: 'Jura';
-   
+
       &__list-item {
          margin: 10px 20px;
          font-size: 16px;
          line-height: 24px;
       }
-   
+
       &__list-item a {
          color: inherit;
       }
    }
-   
+
    &-social {
       &__list {
          display: flex;
          flex-wrap: nowrap;
          justify-content: end;
       }
-   
+
       &__list-item {
          font-size: 32px;
          line-height: 32px;
          margin: 15px;
          border-radius: 10px;
          padding: 6px 8px;
-   
+
       }
-   
+
       &__list-item a {
          color: inherit;
       }
-   
+
    }
 }
 
