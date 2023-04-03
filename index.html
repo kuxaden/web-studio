@@ -8,7 +8,9 @@
   <title>Cтворення сайтів</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe&family=Jura&family=Seymour+One&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe&family=Jura&family=Seymour+One&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="css/main.min.css">
   <link rel="stylesheet" href="css/font-awesome.min.css">
 </head>
@@ -48,63 +50,118 @@
       </div>
     </header>
     <main class="main">
-      <section class="stage">
+      <section class="services" id="services">
+        <div class="container-fluid">
+          <h2 class="services__title">Послуги</h2>
+          <ul class="services__list">
+            <li class="services__item">
+              <h3 class="services__item-title">Landing page</h3>
+              <div class="services__item-img">
+                <img src="img/svg/landing.svg" alt="landing">
+              </div>
+              <div class="services__item-text">
+                Лендінг — це невеликий односторінковий сайт, який закликає клієнта зробити одну конкретну дію:
+                наприклад, підписатися на розсилку, купити навчальний курс або замовити соковижимач. <br>
+              </div>
+              <div class="services__item-box">
+                <span class="services__item-price">від 300$</span>
+                <a class="services__item-detail" href="tel:+380937093029">
+                  <span>Детальніше</span>
+                </a>
+              </div>
+            </li>
+            <li class="services__item">
+              <h3 class="services__item-title">Сайт візитка</h3>
+              <div class="services__item-img">
+                <img src="img/svg/vizitka.svg" alt="landing">
+              </div>
+              <div class="services__item-text">
+                Не великий сайт інформативного характеру, несе основну інформацію про компанію, послуги та товари, а
+                також контактні дані та форму зворотнього звязку. Кількість сторінок не обмежена.
+              </div>
+              <div class="services__item-box">
+                <span class="services__item-price">від 100$</span>
+                <a class="services__item-detail" href="tel:+380937093029">
+                  <span>Детальніше</span>
+                </a>
+              </div>
+            </li>
+            <li class="services__item">
+              <h3 class="services__item-title">Корпоративний сайт</h3>
+              <div class="services__item-img">
+                <img src="img/svg/corporate.svg" alt="landing">
+              </div>
+              <div class="services__item-text">
+                Високоефективний інструмент розвитку бізнесу в інтернеті. Конкурентносроможній сайт з широкою
+                функціональною частиною та сучасним дизайном відповідним іміджу вашою компанії.
+              </div>
+              <div class="services__item-box">
+                <span class="services__item-price">від 350$</span>
+                <a class="services__item-detail" href="tel:+380937093029">
+                  <span>Детальніше</span>
+                </a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="stage" id="stage">
         <div class="container-fluid">
           <div class="stage">
             <h2 class="stage__title">покрокова схема роботи</h2>
             <ul class="stage__list">
               <li class="stage__item stage__item0 stage__item--active">
-                <a class="stage__link" href="#">
+                <div class="stage__link" >
                   <div class="stage__item__point"></div>
-                </a>
+                </div>
                 <div class="stage__item__content">
                   Cтарт</div>
                 <div class="stage__item__percent">0%</div>
               </li>
               <li class="stage__item stage__item1">
-                <a class="stage__link" href="#">
+                <div class="stage__link" >
                   <div class="stage__item__point"></div>
-                </a>
+                </div>
                 <div class="stage__item__content">
                   Планування </div>
                 <div class="stage__item__percent"> 17%</div>
               </li>
               <li class="stage__item stage__item2">
-                <a class="stage__link" href="#">
+                <div class="stage__link" >
                   <div class="stage__item__point"></div>
-                </a>
+                </div>
                 <div class="stage__item__content">
                   Дизайн </div>
                 <div class="stage__item__percent">34%</div>
               </li>
               <li class="stage__item stage__item3">
-                <a class="stage__link" href="#">
+                <div class="stage__link" >
                   <div class="stage__item__point"></div>
-                </a>
+                </div>
                 <div class="stage__item__content">
                   Верстка </div>
                 <div class="stage__item__percent"> 50%</div>
               </li>
               <li class="stage__item stage__item4">
-                <a class="stage__link" href="#">
+                <div class="stage__link" >
                   <div class="stage__item__point"></div>
-                </a>
+                </div>
                 <div class="stage__item__content">
                   Оптимізація </div>
                 <div class="stage__item__percent"> 67%</div>
               </li>
               <li class="stage__item stage__item5">
-                <a class="stage__link" href="#">
+                <div class="stage__link" >
                   <div class="stage__item__point"></div>
-                </a>
+                </div>
                 <div class="stage__item__content">
                   Тестування </div>
                 <div class="stage__item__percent">84%</div>
               </li>
               <li class="stage__item stage__item6">
-                <a class="stage__link" href="#">
+                <div class="stage__link" >
                   <div class="stage__item__point"></div>
-                </a>
+                </div>
                 <div class="stage__item__content">
                   Результат </div>
                 <div class="stage__item__percent">100%</div>
@@ -173,61 +230,6 @@
           </div>
         </div>
       </section>
-      <section class="services" id="services">
-        <div class="container-fluid">
-          <h2 class="services__title">Послуги</h2>
-          <ul class="services__list">
-            <li class="services__item">
-              <h3 class="services__item-title">Landing page</h3>
-              <div class="services__item-img">
-                <img src="img/svg/landing.svg" alt="landing">
-              </div>
-              <div class="services__item-text">
-                Лендінг — це невеликий односторінковий сайт, який закликає клієнта зробити одну конкретну дію:
-                наприклад, підписатися на розсилку, купити навчальний курс або замовити соковижимач. <br>
-              </div>
-              <div class="services__item-box">
-                <span class="services__item-price">від 300$</span>
-                <a class="services__item-detail" href="tel:+380937093029">
-                  <span>Детальніше</span>
-                </a>
-              </div>
-            </li>
-            <li class="services__item">
-              <h3 class="services__item-title">Сайт візитка</h3>
-              <div class="services__item-img">
-                <img src="img/svg/vizitka.svg" alt="landing">
-              </div>
-              <div class="services__item-text">
-                Не великий сайт інформативного характеру, несе основну інформацію про компанію, послуги та товари, а
-                також контактні дані та форму зворотнього звязку. Кількість сторінок не обмежена.
-              </div>
-              <div class="services__item-box">
-                <span class="services__item-price">від 100$</span>
-                <a class="services__item-detail" href="tel:+380937093029">
-                  <span>Детальніше</span>
-                </a>
-              </div>
-            </li>
-            <li class="services__item">
-              <h3 class="services__item-title">Корпоративний сайт</h3>
-              <div class="services__item-img">
-                <img src="img/svg/corporate.svg" alt="landing">
-              </div>
-              <div class="services__item-text">
-                Високоефективний інструмент розвитку бізнесу в інтернеті. Конкурентносроможній сайт з широкою
-                функціональною частиною та сучасним дизайном відповідним іміджу вашою компанії.
-              </div>
-              <div class="services__item-box">
-                <span class="services__item-price">від 350$</span>
-                <a class="services__item-detail" href="tel:+380937093029">
-                  <span>Детальніше</span>
-                </a>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </section>
       <section class="portfolio" id="portfolio">
         <h2 class="portfolio__title">
           Портфоліо
@@ -269,7 +271,7 @@
             <div class="contacts-block__onmap">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20870.31659092366!2d26.562471009217678!3d49.16660222951714!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47322105d261d705%3A0x912eb1c3a939f316!2z0JPQvtGA0L7QtNC-0LosINCl0LzQtdC70YzQvdC40YbRjNC60LAg0L7QsdC70LDRgdGC0YwsIDMyMDAw!5e0!3m2!1suk!2sua!4v1678185793063!5m2!1suk!2sua"
-                style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                style="border:2px solid #f0b752;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
               </iframe>
             </div>
           </div>
