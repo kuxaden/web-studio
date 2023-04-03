@@ -271,8 +271,8 @@
       grid-area: 1 / 2 / 2 / 3;
       text-align: center;
       text-transform: uppercase;
-      font-size: 20px;
-      line-height: 32px;
+      font-size: 16px;
+      line-height: 24px;
       text-align: center;
    }
 
@@ -420,6 +420,12 @@
    }
 
    &__item-price {
+      margin-left: 10px;
+      background: transparent;
+      border: 1px solid $color2;
+      color: $color2;
+      padding: 10px 20px;
+      border-radius: 10px;
       text-align: center;
       grid-area: 3 / 2 / 4 / 3;
    }
@@ -492,6 +498,7 @@
       @extend %button-arrow;
       width: 220px;
       margin: 30px auto;
+
       &::before {
          background-image: url(../img/svg/arrow_right.svg);
       }

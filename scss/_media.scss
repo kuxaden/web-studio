@@ -2,6 +2,7 @@
    .services__list {
       grid-template-columns: 1fr 1fr;
    }
+
    .portfolio {
       &__tablet {
          grid-area: 1 / 3 / 2 / 7;
@@ -230,6 +231,7 @@
       }
 
       &__item-img {
+
          padding: 10px;
       }
 
@@ -291,6 +293,11 @@
 }
 
 @media (max-width: 480px) {
+   .navbar {
+      &__logo {
+         width: 100px;
+      }
+   }
    .slider {
       position: relative;
       max-width: 1000px;
@@ -311,7 +318,6 @@
          grid-area: 1 / 2 / 2 / 3;
          text-align: center;
          text-transform: uppercase;
-         font-size: 24px;
          height: 80px;
       }
 
@@ -321,9 +327,37 @@
          grid-area: 2 / 1 / 3 / 3;
          text-indent: 20px;
       }
+
    }
 
    .services {
+      &__item-img {
+         grid-area: 1 / 1 / 2 / 2;
+         min-height: 80px;
+         border-radius: 10px 0 0 0;
+      }
+
+      &__item-text {
+         grid-area: 2 / 1 / 3 / 3;
+         word-break: normal;
+      }
+
+      &__item-title {
+         margin: auto;
+         font-size: 14px;
+      }
+
+      &__item-box {
+         display: flex;
+         align-items: center;
+         justify-content: space-between;
+         grid-area: 3 / 1 / 4 / 3;
+      }
+
+      &__item-price {
+         grid-area: 3 / 1 / 4 / 3;
+      }
+
       &__item-detail {
          @extend %button-arrow;
          margin: 10px;
