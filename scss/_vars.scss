@@ -28,25 +28,27 @@ $shadow: #2E8B57;
   line-height: 30px;
   align-items: center;
   text-transform: uppercase;
+  max-width: 340px;
   width: 100%;
   padding: 10px;
   margin: 40px auto;
-  position: relative;
-  border-top: 2px solid $color2;
-
-  &::after {
-    content: '';
-    min-width: 200px;
-    height: 2px;
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    max-width: 500px;
-    width: 100%;
-    bottom: 0;
-    transform: translateX(-50%);
-    background: $color2;
-    transition: all 0.5s;
+  border-radius: 10px;
+  background: repeating-linear-gradient(
+    -45deg,
+    rgba($color1, .3) 0px,
+    rgba($color1, .3) 8px,
+    rgba($color3, 1) 8px,
+    rgba($color3, 1) 16px
+  );
+  animation: move-it 20s linear infinite;
+  @keyframes move-it {
+    0% {
+      background-position: initial;
+    }
+    100% {
+      background-position: 340px 0;
+      overflow: hidden;
+    }
   }
 }
 

@@ -113,7 +113,7 @@
       margin-top: 20px;
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
-      gap: 15px
+      gap: 25px 15px;
    }
 
    &__item {
@@ -213,14 +213,6 @@
 
 //STAGE 
 .stage {
-
-   &:hover {
-      .stage__title {
-         &::after {
-            width: 300px;
-         }
-      }
-   }
 
    &__title {
       @extend %section-title;
@@ -327,7 +319,8 @@
 
    .stage__item__point {
       transition: all 0.5s;
-      background: $color2;
+      background: crimson;
+      border-color: crimson;
    }
 
    .stage__item__percent {
