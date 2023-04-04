@@ -51,7 +51,6 @@
          position: relative;
          display: block;
          height: 47px;
-         margin: auto;
          padding: 5px;
          cursor: pointer;
          border-radius: 10px;
@@ -163,16 +162,12 @@
 @media (max-width: 680px) {
 
    .navbar {
-      grid-template-columns: 140px 170px 1fr 47px;
+      grid-template-columns: 120px 170px 1fr 67px;
       margin: auto;
 
       &__title {
          font-size: 14px;
-         line-height: 18px;
-      }
-
-      &__logo-img {
-         height: 55px;
+         line-height: 20px;
       }
 
       &__tel {
@@ -293,11 +288,6 @@
 }
 
 @media (max-width: 480px) {
-   .navbar {
-      &__logo {
-         width: 100px;
-      }
-   }
    .slider {
       position: relative;
       max-width: 1000px;
@@ -374,8 +364,6 @@
    }
 
    .navbar {
-      grid-template-columns: 120px 170px 1fr 47px;
-
       &__title {
          font-size: 13px;
          line-height: 18px;
