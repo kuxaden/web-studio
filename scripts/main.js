@@ -111,27 +111,25 @@ function startAnimate() {
    closeMenu();
 };
 
+
 var flag = 1;
-var mon = documen.getElementById('imgmon');
-var tab = documen.getElementById('imgtab');
-var mob = documen.getElementById('imgmob');
 function changeImage() {
-   if (flag == 1) {
-      document.mon.src = 'img/content/mon01.webp';
-      document.tab.src = 'img/content/tab01.webp';
-      document.mob.src = 'img/content/mob01.webp';
-      flag = 2;
-   } else if (flag == 2) {
-      document.mon.src = 'img/content/mon02.webp';
-      document.tab.src = 'img/content/tab02.webp';
-      document.mob.src = 'img/content/mob02.webp';
-      flag = 3;
-   } else {
-      document.mon.src = 'img/content/mon03.webp';
-      document.tab.src = 'img/content/tab03.webp';
-      document.mob.src = 'img/content/mob03.webp';
-      flag = 1;
-   }
+  if (flag == 1) {
+   document.querySelector('#imgmon').src = 'img/content/mon01.webp';
+   document.querySelector('#imgtab').src = 'img/content/tab01.webp';
+   document.querySelector('#imgmob').src = 'img/content/mob01.webp';
+    flag = 2;
+  } else if (flag == 2) {
+   document.querySelector('#imgmon').src = 'img/content/mon02.webp';
+   document.querySelector('#imgtab').src = 'img/content/tab02.webp';
+   document.querySelector('#imgmob').src = 'img/content/mob02.webp';
+    flag = 3;
+  } else {
+   document.querySelector('#imgmon').src = 'img/content/mon03.webp';
+   document.querySelector('#imgtab').src = 'img/content/tab03.webp';
+   document.querySelector('#imgmob').src = 'img/content/mob03.webp';
+   flag = 1;
+  }
 }
 
 
