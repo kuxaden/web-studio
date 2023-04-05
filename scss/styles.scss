@@ -96,9 +96,26 @@
    }
 }
 
+.main-slide {
+   background: radial-gradient(circle, rgba(240, 183, 82, 1) 0%, rgba(125, 95, 47, 1) 30%, rgba(19, 14, 14, 1) 100%);
+   &__box {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 600px;
+   }
+   &__img {
+      opacity: 0.9;
+      padding: 70px 0 0 0;
+      max-width: 1366px;
+      width: 100%;
+      margin: auto;
+   }
+}
+
 // Послуги
 .services {
-   margin: 110px auto 0;
+   // margin: 110px auto 0;
 
    &__title {
       @extend %section-title;
@@ -205,6 +222,114 @@
    }
 }
 
+//ПЕРЕВАГИ
+.excellence {
+   padding: 0 15px;
+
+   &__title {
+      @extend %section-title;
+   }
+
+   &__list {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 80px;
+      position: relative;
+
+      ::before {
+         content: '';
+         display: block;
+         position: absolute;
+         background-image: url(../img/svg/arrow-all.svg);
+         background-repeat: no-repeat;
+         background-size: 100%;
+         top: calc(50% - 30px);
+         left: calc(50% - 30px);
+         width: 60px;
+         height: 60px;
+         animation: rotate 1.2s linear infinite;
+
+         @keyframes rotate {
+            0% {
+               transform: rotate(0deg) scale(1);
+            }
+
+            50% {
+               transform: rotate(45deg) scale(1.2);
+            }
+
+            100% {
+               transform: rotate(90deg) scale(1);
+            }
+         }
+      }
+   }
+
+   &__item {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      border-radius: 10px;
+      background: $color4;
+      color: $color1;
+
+   }
+
+   &__item:nth-child(1) {
+      .excellence__item-title {
+         text-align: end;
+         margin: auto 0 0 0;
+         border-radius: 0 0 10px 10px;
+
+      }
+   }
+
+   &__item:nth-child(2) {
+      .excellence__item-title {
+         width: 100%;
+         text-align: start;
+         margin: auto 0 0 0;
+         border-radius: 0 0 10px 10px;
+
+      }
+   }
+
+   &__item:nth-child(3) {
+      .excellence__item-title {
+         text-align: end;
+         margin: 0 0 auto 0;
+         border-radius: 10px 10px 0 0;
+
+      }
+   }
+
+   &__item:nth-child(4) {
+      .excellence__item-title {
+         text-align: start;
+         margin: 0 0 auto 0;
+         border-radius: 10px 10px 0 0;
+
+      }
+   }
+
+   &__item-link {}
+
+   &__item-title {
+      width: 100%;
+      color: $color3;
+      background-color: $color2;
+      padding: 10px 20px;
+      margin: auto;
+      min-width: 200px;
+   }
+
+   &__item-text {
+
+      padding: 10px;
+      line-height: 20px;
+   }
+}
 
 //STAGE 
 .stage {
@@ -679,6 +804,7 @@
       border-radius: 10px;
    }
 }
+
 
 // FOOTER
 .footer {

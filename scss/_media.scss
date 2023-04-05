@@ -180,6 +180,11 @@
          padding: 5px 10px;
       }
    }
+   .main-slide {
+      &__img {
+         padding-top: 90px;
+      }
+   }
 
    .slider {
       padding: 0px;
@@ -285,6 +290,7 @@
          line-height: 20px;
       }
    }
+
 }
 
 @media (max-width: 480px) {
