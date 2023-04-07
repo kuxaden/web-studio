@@ -5,7 +5,7 @@
 viewBox="0 0 8670 4335"
  xmlns:xlink="http://www.w3.org/1999/xlink">
  <defs>
-  <font id="FontID1" horiz-adv-x="587" font-variant="normal" style="fill-rule:nonzero" font-weight="400">
+  <font id="FontID1" horiz-adv-x="587" font-variant="normal" style="fill-rule:nonzero" font-style="normal" font-weight="400">
 	<font-face 
 		font-family="EngraversGothic BT">
 		<font-face-src>
@@ -46,11 +46,10 @@ viewBox="0 0 8670 4335"
   </font>
   <style type="text/css">
    <![CDATA[
-    @font-face { font-family:"EngraversGothic BT";font-variant:normal;font-weight:normal;src:url("#FontID1") format(svg)}
+    @font-face { font-family:"EngraversGothic BT";font-variant:normal;font-style:normal;font-weight:normal;src:url("#FontID1") format(svg)}
     @font-face { font-family:"MV Boli";font-variant:normal;font-weight:normal;src:url("#FontID0") format(svg)}
-    .fil2 {fill:none}
-    .fil1 {fill:#2B2A29}
-    .fil0 {fill:#2B2A29}
+    .fil1 {fill:none}
+    .fil0 {fill:#FFED00}
     .fnt1 {font-weight:normal;font-size:1034.19px;font-family:'EngraversGothic BT'}
     .fnt0 {font-weight:normal;font-size:1693.33px;font-family:'MV Boli'}
    ]]>
@@ -60,16 +59,16 @@ viewBox="0 0 8670 4335"
   <metadata id="CorelCorpID_0Corel-Layer"/>
   <text x="1508" y="2220"  class="fil0 fnt0">verstka</text>
   <g transform="matrix(0.868136 0 0 1 574.885 1793.8)">
-   <text x="-387" y="2167"  class="fil1 fnt1">website </text>
-   <text x="3323" y="2167"  class="fil1 fnt1">development</text>
+   <text x="-387" y="2167"  class="fil0 fnt1">website </text>
+   <text x="3323" y="2167"  class="fil0 fnt1">development</text>
   </g>
-  <g id="_2557653967872">
-   <path class="fil1" d="M1670 837c-222,134 -1080,652 -1263,931 283,257 1017,946 1032,1351 -217,-463 -789,-956 -1148,-1251 -300,-246 1246,-1205 1288,-1232 51,-28 112,-5 137,51 25,56 4,123 -46,151zm-1293 903c-2,-2 -5,-4 -7,-7l7 7z"/>
+  <g id="_1509647493024">
+   <path class="fil0" d="M1670 837c-222,134 -1080,652 -1263,931 283,257 1017,946 1032,1351 -217,-463 -789,-956 -1148,-1251 -300,-246 1246,-1205 1288,-1232 51,-28 112,-5 137,51 25,56 4,123 -46,151zm-1293 903c-2,-2 -5,-4 -7,-7l7 7z"/>
   </g>
-  <path class="fil2" d="M1625 736c-533,290 -1404,986 -1294,1064 210,151 1073,983 1109,1318"/>
-  <g id="_2558520735680">
-   <path class="fil1" d="M7086 2754c516,-473 739,-701 1344,-1146 -62,-54 -987,-775 -1122,-956 -7,-9 -11,-9 -26,-10 15,0 20,0 28,9 290,324 1376,877 1225,1010 -557,489 -740,680 -1227,1189 -47,44 -135,58 -196,31 -61,-27 -73,-84 -26,-128z"/>
+  <path class="fil1" d="M1625 736c-533,290 -1404,986 -1294,1064 210,151 1073,983 1109,1318"/>
+  <g id="_1509647493888">
+   <path class="fil0" d="M7086 2754c516,-473 739,-701 1344,-1146 -62,-54 -987,-775 -1122,-956 -7,-9 -11,-9 -26,-10 15,0 20,0 28,9 290,324 1376,877 1225,1010 -557,489 -740,680 -1227,1189 -47,44 -135,58 -196,31 -61,-27 -73,-84 -26,-128z"/>
   </g>
-  <path class="fil2" d="M7197 2802c530,-497 604,-669 1289,-1170 101,-74 -317,-222 -448,-361 -136,-145 -536,-316 -722,-609 -10,-16 -11,-19 -33,-19"/>
+  <path class="fil1" d="M7197 2802c530,-497 604,-669 1289,-1170 101,-74 -317,-222 -448,-361 -136,-145 -536,-316 -722,-609 -10,-16 -11,-19 -33,-19"/>
  </g>
 </svg>
