@@ -92,14 +92,13 @@
       border-radius: 0 0 10px 10px;
       display: flex;
       flex-wrap: wrap;
-      background: radial-gradient(circle, $color2 0%, $color5 30%, $color3 100%);
+      background: linear-gradient(90deg, $color3 0%, $color2 50%, $color3 100%);
       background-position: 0px 630px;
       background-size: 100% 700px;
       position: absolute;
       z-index: 12;
       right: 0;
       left: 0;
-      height: 180px;
       top: -350px;
 
       &__item {
@@ -115,7 +114,7 @@
       }
 
       &.menu-list--active {
-         top: 70px;
+         top: 69px;
          z-index: 12;
       }
    }
@@ -176,11 +175,6 @@
          text-align: center;
          margin: auto 0;
          padding: 5px 10px;
-      }
-   }
-   .main-slide {
-      &__img {
-         padding-top: 90px;
       }
    }
 
@@ -292,15 +286,10 @@
 
 @media (max-width: 480px) {
    .main-slide {
-      &__reason {
-         top: 650px
-      }
-      &__box {
-         height: 900px;
-      }
-      &__img {
-         padding: 0;
-
+      // min-height: 827px;
+      &__title {
+         font-size: 16px;
+         line-height: 20px;
       }
    }
    .slider {

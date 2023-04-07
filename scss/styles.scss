@@ -10,9 +10,7 @@
    top: 0;
    width: 100%;
    transition: top 0.5s;
-   background: radial-gradient(circle, $color2 0%, $color5 30%, $color3 100%);
-   background-position: 0px 700px;
-   background-size: 100% 700px;
+   background: linear-gradient(90deg, $color3 0%, $color2 50%, $color3 100%);
    z-index: 15;
 
 }
@@ -92,16 +90,15 @@
 }
 
 .main-slide {
-   background: radial-gradient(circle, $color2 0%, $color5 30%, $color3 100%);
+   background: linear-gradient(90deg, $color3 0%, $color2 50%, $color3 100%);
    position: relative;
-   display: block;
-   color: $color3;
+   display: grid;
+   grid-template-columns: 1fr;
    display: flex;
    flex-wrap: wrap;
    &__title {
+      margin-top: 70px;
       padding: 15px;
-      position: absolute;
-      top: 70px;
       display: block;
       font-family: 'Seymour One', sans-serif;
       font-size: 20px;
@@ -109,21 +106,25 @@
       text-align: start;
       width: 100%;
       text-align: center;
+      color: $color2;
+      background: rgba($color3, 0.5);
 
    }
    &__reason {
       color: $color1;
-      padding: 20px;
-      position: absolute;
-      top: 550px;
-      background: rgba($color3,.7);
+      padding: 15px;
+      background: rgba($color4, 1 );
       width: 100%;
+      max-height: max-content;
    }
    &__reason-title {
+      padding: 15px;
+
       width: 100%;
       text-align: center;
    }
    &__reason-item {
+      width: 100%;
       text-align: center;
       padding: 10px;
    }
@@ -133,9 +134,9 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 700px;
    }
    &__img {
+      padding: 20px;
       max-width: 1200px;
       width: 100% ;
    }
@@ -728,7 +729,7 @@
 
 // FOOTER
 .footer {
-   background-color: $color2;
+   background: linear-gradient(90deg, $color3 0%, $color2 50%, $color3 100%);
 
    &__logo img {
       margin: auto;
