@@ -98,17 +98,15 @@
    flex-wrap: wrap;
 
    &__title {
-      margin-top: 70px;
-      padding: 15px;
-      display: block;
-      font-family: 'Seymour One', sans-serif;
-      font-size: 20px;
-      line-height: 30px;
-      text-align: start;
-      width: 100%;
+      @extend %section-title;
+      margin: 70px auto 0px auto;
       text-align: center;
-      color: $color2;
-      background: rgba($color3, 0.5);
+      max-width: 588px;
+      background: repeating-linear-gradient(-45deg,
+      #443e4b 0px,
+      #443e4b 8px,
+      rgba($color3, 1) 8px,
+      rgba($color3, 1) 16px);
 
    }
 

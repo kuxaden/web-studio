@@ -275,6 +275,11 @@
 }
 
 @media (max-width: 540px) {
+   .main-slide {
+      &__title {
+         max-width: 294px;
+      }
+   }
    .footer-contacts {
       &__list-item {
          margin: 10px 0;
@@ -285,13 +290,7 @@
 }
 
 @media (max-width: 480px) {
-   .main-slide {
-      // min-height: 827px;
-      &__title {
-         font-size: 16px;
-         line-height: 20px;
-      }
-   }
+
    .slider {
       position: relative;
       max-width: 1000px;
