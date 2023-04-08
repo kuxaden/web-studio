@@ -96,6 +96,7 @@
    grid-template-columns: 1fr;
    display: flex;
    flex-wrap: wrap;
+
    &__title {
       margin-top: 70px;
       padding: 15px;
@@ -110,24 +111,84 @@
       background: rgba($color3, 0.5);
 
    }
+
    &__reason {
       color: $color1;
       padding: 15px;
-      background: rgba($color4, 1 );
-      width: 100%;
+      background: rgba($color3, 0.5);
+      margin: auto;
       max-height: max-content;
+      width: 100%;
    }
-   &__reason-title {
-      padding: 15px;
 
-      width: 100%;
-      text-align: center;
-   }
-   &__reason-item {
-      width: 100%;
-      text-align: center;
+   &__reason-title {
+      color: $color3;
+      margin: 0 auto;
       padding: 10px;
+      width: max-content;
+      text-align: center;
    }
+
+   &__reason-item {
+      display: flex;
+      opacity: 0;
+      overflow: hidden;
+      margin: 10px auto;
+      max-width: 100%;
+      width: max-content;
+      background: $color4;
+      border-radius: 10px;
+
+   }
+   &__reason-item p {
+      text-align: start;
+      padding: 10px;
+      line-height: 20px;
+
+   }
+
+   &__reason-item i {
+      display: flex;
+      align-items: center;
+      border-radius: 10px 0 0 10px;
+      color: $color3;
+      padding: 10px 15px;
+      background: $color2;
+      font-size: 20px;
+      width: 50px;
+   }
+
+   @keyframes toleft {
+      0% {
+         transform: translateX(-250%);
+      }
+
+      100% {
+         transform: translateX(0);
+         opacity: 1;
+      }
+   }
+
+   @keyframes toright {
+      0% {
+         transform: translateX(250%);
+      }
+
+      100% {
+         transform: translateX(0);
+         opacity: 1;
+
+      }
+   }
+
+   &__reason-item:nth-child(even) {
+      animation: toleft 2s ease-out forwards;
+   }
+
+   &__reason-item:nth-child(odd) {
+      animation: toright 2s ease-out forwards;
+   }
+
    &__box {
       width: 100%;
       margin: auto;
@@ -135,10 +196,11 @@
       justify-content: center;
       align-items: center;
    }
+
    &__img {
       padding: 20px;
       max-width: 1200px;
-      width: 100% ;
+      width: 100%;
    }
 }
 
