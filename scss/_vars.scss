@@ -42,7 +42,7 @@ $shadow: #2E8B57;
     rgba($color3, 1) 8px,
     rgba($color3, 1) 16px
   );
-  animation: move-it 20s linear infinite;
+  animation: move-it 40s linear infinite;
   @keyframes move-it {
     0% {
       background-position: initial;
@@ -95,8 +95,8 @@ $shadow: #2E8B57;
   border: 1px hidden;
   font-family: 'Montserrat', sans-serif;
   letter-spacing: 2px;
-  background-image: linear-gradient(to right, $color3 0%, rgba($color3, 0.4) 50%, $color3 100%);
-  background-size: 220% auto;
+  background-image: linear-gradient(to right, $color3 0%, rgba($color3, 0.2) 50%, $color3 100%);
+  background-size: 0% auto;
   transition: .5s;
   border-radius: 10px;
 }
