@@ -8,17 +8,15 @@ $shadow: #2E8B57;
 
 .portfolio__monitor {
   --he: 300px;
-}
-
-;
+};
 
 .portfolio__tablet {
   --he: 318px;
-}
+};
 
 .portfolio__mobile {
   --he: 570px;
-}
+};
 
 %section-title {
   color: $color2;
@@ -30,28 +28,45 @@ $shadow: #2E8B57;
   line-height: 30px;
   align-items: center;
   text-transform: uppercase;
-  max-width: 294px;
-  width: 100%;
+  max-width: 100%;
   padding: 10px;
   margin: 40px auto;
-  border-radius: 10px;
-  background: repeating-linear-gradient(
-    -45deg,
-    rgba($color1, .3) 0px,
-    rgba($color1, .3) 8px,
-    rgba($color3, 1) 8px,
-    rgba($color3, 1) 16px
-  );
-  animation: move-it 40s linear infinite;
-  @keyframes move-it {
-    0% {
-      background-position: initial;
-    }
-    100% {
-      background-position: 340px 0;
-      overflow: hidden;
-    }
-  }
+
+}
+.sliding-button {
+  text-decoration: none;
+  outline: none;
+  display: inline-block;
+  position: relative;
+  padding: 10px;
+  border: 1px solid;
+  border-image: linear-gradient(0deg, rgba($color2,1) 0%, rgba($color2,1) 25%, rgba($color2,1) 75%, rgba($color2,1) 100%);
+  border-image-slice: 1;
+  margin: 10px;
+  overflow: hidden;
+  letter-spacing: 2px;
+  transition: .8s cubic-bezier(.165, .84, .44, 1);
+}
+
+.sliding-button:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 0;
+  width: 100%;
+  z-index: -1;
+  color: white;
+  background: linear-gradient(0deg, rgba($color2,0.9) 0%, rgba($color4,0.5) 35%, rgba($color4,0.5) 65%, rgba($color2,0.9) 100%);
+  transition: .8s cubic-bezier(.165, .84, .44, 1);
+}
+.sliding-button:hover {
+  background: rgba(255, 255, 255, 0);
+}
+.sliding-button:hover:before {
+  bottom: 0%;
+  top: auto;
+  height: 100%;
 }
 
 %button-arrow {
@@ -86,23 +101,6 @@ $shadow: #2E8B57;
     background-repeat: no-repeat;
     background-position: center;
   }
-}
-
-.gradient-button {
-  text-decoration: none;
-  display: inline-block;
-  padding: 8px 12px;
-  border: 1px hidden;
-  font-family: 'Montserrat', sans-serif;
-  letter-spacing: 2px;
-  background-image: linear-gradient(to right, $color3 0%, rgba($color3, 0.2) 50%, $color3 100%);
-  background-size: 220% auto;
-  transition: .5s;
-  border-radius: 10px;
-}
-
-.gradient-button:hover {
-  background-position: right center;
 }
 
 // BUTTON PLAY

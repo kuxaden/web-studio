@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe&family=Jura&family=Seymour+One&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe&family=Jura&family=Caveat&family=Seymour+One&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="css/main.min.css">
   <link rel="stylesheet" href="css/font-awesome.min.css">
@@ -19,26 +19,24 @@
   <div class="wrapper">
     <header class="header">
       <nav class="navbar">
-
         <a class="navbar__logo" href="#">
           <img class="navbar__logo-img" src="img/svg/logo.svg" alt="logotip">
         </a>
         <div class="navbar__tel ">
-          <a class="navbar__tel-link gradient-button" href="tel:+380937093029">+380937093029</a>
+          <a class="navbar__tel-link sliding-button" href="tel:+380937093029">0937093029</a>
         </div>
         <ul class="menu-list">
-          <li class="menu-list__item " onclick="closeMenu()">
-            <a class="menu-list__item-link gradient-button" href="#services">Послуги</a>
+          <li class="menu-list__item sliding-button " onclick="closeMenu()">
+            <a class="menu-list__item-link" href="#services">Послуги</a>
           </li>
-          <li class="menu-list__item " onclick="closeMenu()">
-            <a class="menu-list__item-link gradient-button" href="#portfolio">Портфоліо</a>
+          <li class="menu-list__item sliding-button" onclick="closeMenu()">
+            <a class="menu-list__item-link" href="#portfolio">Портфоліо</a>
           </li>
-          <li class="menu-list__item " onclick="closeMenu()">
-            <a class="menu-list__item-link gradient-button" href="#contacts">Контакти</a>
+          <li class="menu-list__item sliding-button" onclick="closeMenu()">
+            <a class="menu-list__item-link" href="#contacts">Контакти</a>
           </li>
-
         </ul>
-        <button class="navbar-btn gradient-button" onclick="openMenu()">
+        <button class="navbar-btn" onclick="openMenu()">
           <span></span>
           <span></span>
           <span></span>
@@ -47,25 +45,29 @@
     </header>
     <main class="main">
       <section class="main-slide">
-        <div class="container-fluid">
-          <h1 class="main-slide__title">
-            Верстання сайтів. Створення сайтів.
-          </h1>
-          <div class="main-slide__box">
-            <img class="main-slide__img" srcset="img/content/slide-720.webp 720w,
-            img/content/slide-1200.webp 1200w,
-            img/content/slide-1440.webp 1440w" src="img/content/slide-1440.webp" alt="main-slide">
+        <h1 class="main-slide__title">
+          Верстання сайтів. Створення сайтів.
+        </h1>
+        <div class="main-slide__box">
+          <img class="main-slide__img" src="img/svg/main-slide.svg" alt="main-slide">
+        </div>
+        <div class="main-slide__reason">
+          <h2 class="main-slide__reason-title">
+            Декілька причин створити сайт:</h2>
+          <div class="main-slide__reason-item">
+            <p> - створити репутацію;</p>
           </div>
-          <div class="main-slide__reason">
-            <h2 class="main-slide__reason-title">Декілька причин створити сайт:</h2>
-            <div class="main-slide__reason-item">
-              <i class="fa-regular fa-building"></i>
-              <p>Компанія - щоб створити репутацію, знайти нових клієнтів, збільшити продажі;</p>
-            </div>
-            <div class="main-slide__reason-item">
-              <i class="fa-solid fa-user"></i>
-              <p>Приватна особа - щоб прорекламувати себе чи свій бізнес, продавати товари чи послуги онлайн.</p>
-            </div>
+          <div class="main-slide__reason-item">
+            <p> - збільшити продажі;</p>
+          </div>
+          <div class="main-slide__reason-item">
+            <p> - знайти нових клієнтів;</p>
+          </div>
+          <div class="main-slide__reason-item">
+            <p> - прорекламувати себе чи свій бізнес;</p>
+          </div>
+          <div class="main-slide__reason-item">
+            <p> - продавати товари чи послуги онлайн.</p>
           </div>
         </div>
       </section>
@@ -124,10 +126,18 @@
           </ul>
         </div>
       </section>
+      <section class="about">
+        <div class="about__inner">
+          <h2 class="about__title">Про мене</h2>
+          <div class="about__text1"></div>
+          <div class="about__text2"></div>
+          <div class="about__text3"></div>
+        </div>
+      </section>
       <section class="stage" id="stage">
         <div class="container">
           <div class="stage">
-            <h2 class="stage__title">схема роботи</h2>
+            <h2 class="stage__title">Робочий процесс</h2>
             <ul class="stage__list">
               <li class="stage__item stage__item0 stage__item--active">
                 <div class="stage__link">
@@ -235,6 +245,7 @@
           </div>
         </div>
       </section>
+
       <section class="portfolio" id="portfolio">
         <div class="container">
           <h2 class="portfolio__title">
@@ -293,27 +304,28 @@
         </a>
         <div class="footer-contacts">
           <ul class="footer-contacts__list">
-            <li class="footer-contacts__list-item gradient-button">
-              <a class="" href="mailto:kuxa.cominer@gmail.com"><i class="icon-gmail"></i>kuxa.cominer@gmail.com</a>
+            <li class="footer-contacts__list-item">
+              <a class="sliding-button" href="mailto:kuxa.cominer@gmail.com"><i
+                  class="icon-gmail"></i>kuxa.cominer@gmail.com</a>
             </li>
-            <li class="footer-contacts__list-item gradient-button">
-              <a class="" href="tel:+380937093029">Life +38(093)709-30-29</a>
+            <li class="footer-contacts__list-item">
+              <a class="sliding-button" href="tel:+380937093029">Life +38(093)709-30-29</a>
             </li>
           </ul>
         </div>
         <div class="footer-social">
           <ul class="footer-social__list">
-            <li class="footer-social__list-item gradient-button">
-              <a class="" href="viber://add?number=380937093029"><i class="fa-brands fa-viber"></i></a>
+            <li class="footer-social__list-item">
+              <a href="viber://add?number=380937093029"><i class="fa-brands fa-viber"></i></a>
             </li>
-            <li class="footer-social__list-item gradient-button"><a class="" href="https://telegram.me/+380937093029"><i
-                  class="fa-brands fa-telegram"></i></a>
+            <li class="footer-social__list-item">
+              <a href="https://telegram.me/+380937093029"><i class="fa-brands fa-telegram"></i></a>
             </li>
-            <li class="footer-social__list-item gradient-button">
-              <a class="" href="https://www.instagram.com/kuxaden/"><i class="fa-brands fa-instagram"></i></a>
+            <li class="footer-social__list-item">
+              <a href="https://www.instagram.com/kuxaden/"><i class="fa-brands fa-instagram"></i></a>
             </li>
-            <li class="footer-social__list-item gradient-button">
-              <a class="" href="https://www.facebook.com/profile.php?id=100022210161788"><i
+            <li class="footer-social__list-item">
+              <a href="https://www.facebook.com/profile.php?id=100022210161788"><i
                   class="fa-brands fa-facebook"></i></a>
             </li>
           </ul>
@@ -323,6 +335,28 @@
   </div>
   <script src="https://kit.fontawesome.com/38a4fe2210.js" crossorigin="anonymous"></script>
   <script src="js/main.min.js"></script>
+  <script>
+    const elem1 = document.querySelector('.about__text1');
+    const elem2 = document.querySelector('.about__text2');
+    const elem3 = document.querySelector('.about__text3');
+    const text1 = `Привіт, мене звуть Денис, і я веб-розробник, який пристрасно захоплений створенням якісних та ефективних веб-сайтів.`;
+    const text2 = `Я вірю, що кожен бізнес заслуговує на веб-сайт, який не тільки красивий, але й функціональний, зручний для користувачів і відповідає його унікальним потребам. Тому я прагну створити сайти, які не тільки виглядають професійно, але й сприяють досягненню бізнес-цілей моїх клієнтів.`;
+    const text3 = `Я використовую останні технології та методи розробки, щоб створювати сайти, які швидко завантажуються та легко навігуються, та забезпечую повну підтримку та обслуговування сайту після його запуску. Якщо ти шукаєш веб-розробника, який допоможе тобі створити сайт, який приверне увагу та утримає користувачів, зв'яжися зі мною сьогодні.`
+
+    let i = 0;
+
+    function typeWriter() {
+      if (i < 1000) {
+        elem1.innerHTML += text1.charAt(i);
+        elem2.innerHTML += text2.charAt(i - 120);
+        elem3.innerHTML += text3.charAt(i - 400);
+        setTimeout(typeWriter, 30); // задержка между символами
+        i++;
+      }
+
+    };
+    typeWriter();
+  </script>
 </body>
 
 </html>
